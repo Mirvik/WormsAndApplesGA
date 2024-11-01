@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Genetic Algorithm</title>
+</head>
+<body>
+  <form action="main.html" method="get" id="myForm">
+
+    <header class="header">
+      <div class="header_div" id="header_div">
+        <h1>Genetic Algorithm</h1>
+        <input type="number" class="input" id="inpPopSize" placeholder="Population Size" min="1" max="49" name="popSize" required>
+        <br>
+        <br>
+        <input type="number" class="input" id="inpMaxGen" placeholder="Max Generations" min="1" name="maxGen" required>
+        <br>
+        <br>
+        <input type="number" class="input" id="inpPMutate" placeholder="The mutation probability" name="pMutate" min="0" max="1" step="0.01" required>
+        <br>
+        <h3 id="warningText"></h3>
+        <input type="submit" class="btn" id="launchBtn" value="Create population">
+      </div>
+    </header>
+
+  </form>
+
+  <center>
+    <p class="hint"><span class="solid_red">■</span> - apple, <span class="solid_yellow">■</span> - worm</p>
+  </center>
+  
+  <canvas id="canvas" width="840" height="840"></canvas>
+
+  <script type="module" src="scripts/start/main.js"></script>
+
+</body>
+</html>

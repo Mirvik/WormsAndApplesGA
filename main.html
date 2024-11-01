@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Genetic Algorithm</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header_div" id="header_div">
+      <h1>Genetic Algorithm</h1>
+      <br>
+      <button class="btn" id="returnBtn"><a href="index.html">Return to start</a></button>
+      <br>
+      <h2>Number generation:</h2>
+      <button class="gen_num" id="genNum"></button>
+      <br>
+      <br>
+      <button class="btn" id="minBtn">Min</button>
+      <button class="btn" id="pastBtn">PastGen</button>
+      <button class="btn" id="nextBtn">NextGen</button>
+      <button class="btn" id="maxBtn">Max</button>
+    </div>
+  </header>
+
+  <center>
+    <p class="hint"><span class="solid_red">■</span> - apple, <span class="solid_yellow">■</span> - worm</p>
+  </center>
+
+  <canvas id="canvas" width="840" height="840"></canvas>
+
+  <script type="module" src="scripts/main/main.js"></script>
+
+</body>
+</html>

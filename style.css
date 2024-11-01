@@ -1,0 +1,152 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: sans-serif;
+
+    overflow: auto;
+
+    margin-bottom: 200px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hint {
+    color: black;
+    font-size: 50PX;
+
+    font-family: sans-serif;
+}
+
+.solid_yellow {
+    color: yellow;
+}
+
+.solid_red {
+    color: red;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.header_div {
+    text-align: center;
+    border: 4px solid black;
+}
+
+#game-container {
+    position: relative;
+
+    height: 500px;
+    padding-bottom: 400px;
+}
+
+.btn {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    background-color: blue;
+    transition: .2s;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid blue;
+    color: blue;
+    background-color: white;
+}
+
+.input {
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+#canvas {
+    background-color: #1e9600; /* Задний фон для лучшего контраста */
+    display: block;
+    margin: 0 auto;
+
+    border: solid 3px black;
+}
+
+.gen_num {
+    min-width: 70px;
+    min-height: 70px;
+
+    padding: 10px;
+
+    color: white;
+    background-color: #db7f34;
+
+    font-size: 35px;
+    border-radius: 50%;
+    border: 2px solid black;
+
+    display: inline-flex;  /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; 
+
+    aspect-ratio: 1;
+}
+
+.gen_num:hover {
+
+}
+
+.gen_num:active {
+    
+}
+
+#generation {
+    color: green;
+}
+
+
+
+/* Стиль для яблок */
+.apple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Стиль для червяков */
+.worm {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Номер червяка */
+.worm-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+
+form {
+    margin-bottom: 100px;
+}
